@@ -1,5 +1,6 @@
 <template>
-  <div class="bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 min-h-screen p-6">
+<div class="bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-700 min-h-screen p-6">
+
         <Head>
       <Title>M3ROUF Influencers</Title>
     </Head>
@@ -16,9 +17,9 @@
         :key="index"
         class="influencer-card"
       >
-        <div class="flex flex-row gap-6">
-          <img :src="influencer.Photo || 'default-photo.png'" alt="" />
-          <h3 class="font-semibold">{{ influencer.Name }}</h3>
+        <div class="flex flex-row  gap-6">
+      <img class="h-20 w-20 rounded-full" v-if="influencer.Photo" :src="influencer.Photo" :alt="influencer.Name" />
+          <h3 class="font-semibold my-auto">{{ influencer.Name }}</h3>
         </div>
         <div class="mt-4 flex flex-row justify-around align-middle">
           <p
@@ -61,7 +62,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "12k",
     Name: "wardshah",
-    Photo: null,
+    Photo: "https://i.postimg.cc/Nfvhqbhg/wardshah.png",
   },
   {
     UserName: "3omadd",
@@ -70,17 +71,9 @@ const influencers = ref([
     Youtube: null,
     tiktok: "133k",
     Name: "Ahmed Emad",
-    Photo: null,
+    Photo: "https://i.postimg.cc/L68XfHXY/Ahmed-Emad.png",
   },
-  {
-    UserName: "abdallahesmail_20",
-    Insagram: "2k",
-    facebook: null,
-    Youtube: null,
-    tiktok: "5.2k",
-    Name: "abdallah Esmail",
-    Photo: null,
-  },
+
   {
     UserName: "9li9",
     Insagram: "1.4M",
@@ -88,7 +81,7 @@ const influencers = ref([
     Youtube: "1.5M",
     tiktok: "559k",
     Name: "Abdulrhman mosad",
-    Photo: null,
+    Photo: "https://i.postimg.cc/vTz4yTmM/Abdulrhman-mosad.png",
   },
   {
     UserName: "abdallaanabil",
@@ -97,7 +90,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "376.5K",
     Name: "Abdalla Nabil",
-    Photo: null,
+    Photo: "https://i.postimg.cc/Dz9JdRDV/Abdalla-Nabil.png",
   },
   {
     UserName: "a_s_m_r_e_k_a_ph",
@@ -106,7 +99,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "976.3k",
     Name: "Asmarekah",
-    Photo: null,
+    Photo: "https://i.postimg.cc/JzC2vhkt/Asmarekah.png",
   },
   {
     UserName: "1mennawaleed",
@@ -115,7 +108,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "5.5k",
     Name: "Menna waleed",
-    Photo: null,
+    Photo: "https://i.postimg.cc/C5DWnn8T/Menna_waleed.png",
   },
   {
     UserName: "adhamsamehh1",
@@ -124,7 +117,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "136.3K",
     Name: "Adham Sameh",
-    Photo: null,
+    Photo: "https://i.postimg.cc/qM1NZNYx/Adham-Sameh.png",
   },
   {
     UserName: "ahmed_kamal_06",
@@ -133,7 +126,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "6.2M",
     Name: "Ahmed Kamel",
-    Photo: null,
+    Photo: "https://i.postimg.cc/kXY5vk6j/Ahmed-Kamel.png",
   },
   {
     UserName: "ahmedcooty",
@@ -142,7 +135,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "304.4K",
     Name: "Ahmed Cooty",
-    Photo: null,
+    Photo: "https://i.postimg.cc/NjV5BWQy/Ahmed-Cooty.png",
   },
   {
     UserName: "ahmed_hany_rashdan",
@@ -151,7 +144,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "773.9K",
     Name: "Ahmed Hany",
-    Photo: null,
+    Photo: "https://i.postimg.cc/prqL7S0L/Ahmed-Hany.png",
   },
   {
     UserName: "ahmed_sami_phg",
@@ -160,7 +153,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "31.6K",
     Name: "Ahmed Sami",
-    Photo: null,
+    Photo: "https://i.postimg.cc/v838GpzQ/Ahmed-Sami.png",
   },
   {
     UserName: "ahmedeisaofficial",
@@ -169,7 +162,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "95.7K",
     Name: "Ahmed Eisa",
-    Photo: null,
+    Photo: "https://i.postimg.cc/rm2stx0M/Ahmed-Eisa.png",
   },
   {
     UserName: "ahmed_hisham_banknote",
@@ -178,7 +171,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "742.5K",
     Name: "Ahmed Hisham",
-    Photo: null,
+    Photo: "https://i.postimg.cc/445ymKJR/Ahmed-Hisham.png",
   },
   {
     UserName: "ahmedellsaeed",
@@ -187,7 +180,7 @@ const influencers = ref([
     Youtube: "800K",
     tiktok: "160.2K",
     Name: "Ahmed El Saeed",
-    Photo: null,
+    Photo: "https://i.postimg.cc/0NwrQcNV/Ahmed-El-Saeed.png",
   },
   {
     UserName: "abdalla.ibrahim.alameldin",
@@ -196,7 +189,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "2.9k",
     Name: "Abdalla ibrahim",
-    Photo: null,
+    Photo: "https://i.postimg.cc/yNg3R7LX/Abdalla-ibrahim.png",
   },
   {
     UserName: "ahmedgamal.official",
@@ -205,7 +198,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: null,
     Name: "Ahmed Gamal",
-    Photo: null,
+    Photo: "https://i.postimg.cc/XqVvsWkP/Ahmed-Gamal.png",
   },
   {
     UserName: "ahmed.keshk.official",
@@ -214,7 +207,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "68.6k",
     Name: "Ahmed keshk",
-    Photo: null,
+    Photo: "https://i.postimg.cc/XYT7Tdgd/Ahmed-keshk.png",
   },
   {
     UserName: "ahmed_alkial",
@@ -223,7 +216,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "1.2M",
     Name: "Ahmed Alkial",
-    Photo: null,
+    Photo: "https://i.postimg.cc/9QzD3WH5/Ahmed-Alkial.png",
   },
   {
     UserName: "habibaismail",
@@ -232,7 +225,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: null,
     Name: "habiba ismail",
-    Photo: null,
+    Photo: "https://i.postimg.cc/bvwcVv7k/habiba_ismail.png",
   },
   {
     UserName: "_chefm",
@@ -241,7 +234,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "184.4K",
     Name: "Mohamed Hamed",
-    Photo: null,
+    Photo: "https://i.postimg.cc/66vsmgmj/Mohamed_Hamed.png",
   },
   {
     UserName: "ahmedel_shahat",
@@ -250,7 +243,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "63K",
     Name: "Ahmed Elshahat",
-    Photo: null,
+    Photo: "https://i.postimg.cc/RF1F1hKf/Ahmed-Elshahat.png",
   },
   {
     UserName: "alidoniaofficial",
@@ -259,7 +252,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "1.1M",
     Name: "Ali Donia",
-    Photo: null,
+    Photo: "https://i.postimg.cc/gjTP3bS8/Ali-Donia.png",
   },
   {
     UserName: "alaakassem25",
@@ -268,7 +261,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "13k",
     Name: "Alaa Kassem",
-    Photo: null,
+    Photo: "https://i.postimg.cc/C1J0Lqbv/Alaa-Kassem.png",
   },
   {
     UserName: "amar_ashraf_official",
@@ -277,7 +270,7 @@ const influencers = ref([
     Youtube: "665k",
     tiktok: "6.3M",
     Name: "Ammar Ashraf",
-    Photo: null,
+    Photo: "https://i.postimg.cc/rw5vw4kS/Ammar-Ashraf.png",
   },
   {
     UserName: "amiraaboalnaga",
@@ -286,7 +279,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "8k",
     Name: "Amira Aboalnaga",
-    Photo: null,
+    Photo: "https://i.postimg.cc/dtgY1vTK/Amira-Aboalnaga.png",
   },
   {
     UserName: "aligaber_fox",
@@ -295,7 +288,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: null,
     Name: "Ali Gaber",
-    Photo: null,
+    Photo: "https://i.postimg.cc/wxfzCDqM/Ali-Gaber.png",
   },
   {
     UserName: "amira.sayyed",
@@ -304,7 +297,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "23.5K",
     Name: "Amira Sayed",
-    Photo: null,
+    Photo: "https://i.postimg.cc/PqQs2wVt/Amira-Sayed.png",
   },
   {
     UserName: "amr_elwadidy",
@@ -313,7 +306,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "19.1k",
     Name: "Amr elwadidy",
-    Photo: null,
+    Photo: "https://i.postimg.cc/Xv3tGvjt/Amr_elwadidy.png",
   },
   {
     UserName: "amlyouness",
@@ -322,7 +315,7 @@ const influencers = ref([
     Youtube: "6.4k",
     tiktok: "13.8K",
     Name: "Aml Youness",
-    Photo: null,
+    Photo: "https://i.postimg.cc/qB5fb0wC/Aml-Youness.png",
   },
   {
     UserName: "amlabdelmaboud",
@@ -331,7 +324,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "8k",
     Name: "Aml Abdelmaboud",
-    Photo: null,
+    Photo: "https://i.postimg.cc/0jrTkHkQ/Aml-Abdelmaboud.png",
   },
   {
     UserName: "amiragamal.official",
@@ -340,7 +333,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: null,
     Name: "Amira Gamal",
-    Photo: null,
+    Photo: "https://i.postimg.cc/jjbYHXXg/Amira-Gamal.png",
   },
   {
     UserName: "amlhammadofficial",
@@ -349,7 +342,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "569.2K",
     Name: "Aml Hammad",
-    Photo: null,
+    Photo: "https://i.postimg.cc/hvwHfbv0/Aml-Hammad.png",
   },
   {
     UserName: "~Abdellrahman Ramadan",
@@ -358,7 +351,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: null,
     Name: "Abdellrahman ramadan",
-    Photo: null,
+    Photo: "https://i.postimg.cc/kG92LKqf/Abdellrahman-ramadan.png",
   },
   {
     UserName: "aliaadarwich_makeupartist",
@@ -367,7 +360,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "7.1k",
     Name: "Aliaa Darwish",
-    Photo: null,
+    Photo: "https://i.postimg.cc/gkxpmrjD/Aliaa-Darwish.png",
   },
   {
     UserName: "amiraelhelw_",
@@ -376,7 +369,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "78.7K",
     Name: "Amira\u2002Elhelw",
-    Photo: null,
+    Photo: "https://i.postimg.cc/mDdxGGGJ/Amira-Elhelw.png",
   },
   {
     UserName: "amiraaloqda",
@@ -385,7 +378,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: null,
     Name: "Amira Aloqda",
-    Photo: null,
+    Photo: "https://i.postimg.cc/qvnd6Y86/Amira-Aloqda.png",
   },
   {
     UserName: "ahmedimamofficial",
@@ -394,7 +387,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: null,
     Name: "Ahmed Ashmawy",
-    Photo: null,
+    Photo: "https://i.postimg.cc/05dMDW03/Ahmed-Ashmawy.png",
   },
   {
     UserName: "mazenghareb3",
@@ -403,7 +396,7 @@ const influencers = ref([
     Youtube: "31.7k",
     tiktok: "1.5M",
     Name: "Mazen Ghareb",
-    Photo: null,
+    Photo: "https://i.postimg.cc/nzNyLGCG/Mazen_Ghareb.png",
   },
   {
     UserName: "ahmeed.ts",
@@ -412,7 +405,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "1.4M",
     Name: "Ahmed Ts",
-    Photo: null,
+    Photo: "https://i.postimg.cc/Gt7bzy2B/Ahmed-Ts.png",
   },
   {
     UserName: "ahmedrafat25",
@@ -421,7 +414,7 @@ const influencers = ref([
     Youtube: "6.4M",
     tiktok: "2.1M",
     Name: "Ahmed Raafat",
-    Photo: null,
+    Photo: "https://i.postimg.cc/sxDVpcVd/Ahmed-Raafat.png",
   },
   {
     UserName: "ahmeednassar",
@@ -430,7 +423,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "263.3K",
     Name: "Ahmed Nasser",
-    Photo: null,
+    Photo: "https://i.postimg.cc/4d1f7MRQ/Ahmed-Nasser.png",
   },
   {
     UserName: "aida_s3id",
@@ -439,7 +432,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "231.4K",
     Name: "Aida said",
-    Photo: null,
+    Photo: "https://i.postimg.cc/kXHnbKzz/Aida-said.png",
   },
   {
     UserName: "al_azzazy",
@@ -448,7 +441,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: null,
     Name: "Maha El Azzazy",
-    Photo: null,
+    Photo: "https://i.postimg.cc/hjJFg5PG/Maha_El_Azzazy.png",
   },
   {
     UserName: "alaa.mamdou7",
@@ -457,7 +450,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "16.2K",
     Name: "Alaa Mamdouh",
-    Photo: null,
+    Photo: "https://i.postimg.cc/MG7xN4HJ/Alaa-Mamdouh.png",
   },
   {
     UserName: "~Ammer Taher",
@@ -466,7 +459,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "36.2K",
     Name: "Ammer Taher",
-    Photo: null,
+    Photo: "https://i.postimg.cc/TYLzBSNN/Ammer-Taher.png",
   },
   {
     UserName: "alaa_rayan111",
@@ -475,16 +468,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "25.6K",
     Name: "Alaa rayan",
-    Photo: null,
-  },
-  {
-    UserName: "ahmednasser_15",
-    Insagram: "21.6K ",
-    facebook: null,
-    Youtube: null,
-    tiktok: "31.8K",
-    Name: "Ahmed Nasser",
-    Photo: null,
+    Photo: "https://i.postimg.cc/V6z18R0r/Alaa-rayan.png",
   },
   {
     UserName: "ahmedyouniis",
@@ -493,7 +477,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "968.4K",
     Name: "Ahmed Younis ",
-    Photo: null,
+    Photo: "https://i.postimg.cc/ZKnbnV76/Ahmed-Younis.png",
   },
   {
     UserName: "alaa.el_hosien",
@@ -502,7 +486,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "2.2k",
     Name: "Alaa El-hosien",
-    Photo: null,
+    Photo: "https://i.postimg.cc/LsK2yRHV/Alaa-El-hosien.png",
   },
   {
     UserName: "ahmedlotfy101",
@@ -511,7 +495,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "1.2M",
     Name: "Ahmed Lotfy",
-    Photo: null,
+    Photo: "https://i.postimg.cc/6Qn5wqHS/Ahmed-Lotfy.png",
   },
   {
     UserName: "alaa_elboushy",
@@ -520,7 +504,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "36.6K",
     Name: "Alaa Elboushy",
-    Photo: null,
+    Photo: "https://i.postimg.cc/Sxzm7jps/Alaa-Elboushy.png",
   },
   {
     UserName: "ahmedmohsen.22",
@@ -529,7 +513,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "909K",
     Name: "Ahmed Mohsen",
-    Photo: null,
+    Photo: "https://i.postimg.cc/vBy8mykm/Ahmed-Mohsen.png",
   },
   {
     UserName: "amr_ismat",
@@ -538,7 +522,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: null,
     Name: "Amr Ismat",
-    Photo: null,
+    Photo: "https://i.postimg.cc/wvjP2bsV/Amr_Ismat.png",
   },
   {
     UserName: "amroelmeligy",
@@ -547,7 +531,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "2.2k",
     Name: "Amro El Meligy",
-    Photo: null,
+    Photo: "https://i.postimg.cc/FRC6BgyQ/Amro_El_Meligy.png",
   },
   {
     UserName: "arahmanmagdy",
@@ -556,7 +540,7 @@ const influencers = ref([
     Youtube: "77.3k",
     tiktok: "192.6K",
     Name: "AbdulRahman Magdy",
-    Photo: null,
+    Photo: "https://i.postimg.cc/Y9Q4XbKv/Abdul-Rahman-Magdy.png",
   },
   {
     UserName: "areejkassem23",
@@ -565,7 +549,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "110.6K",
     Name: "Areej kassem",
-    Photo: null,
+    Photo: "https://i.postimg.cc/yxwbV1pQ/Areej_kassem.png",
   },
   {
     UserName: "amrgabergadallah",
@@ -574,7 +558,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "386.9K",
     Name: "Amr Gaber",
-    Photo: null,
+    Photo: "https://i.postimg.cc/435qzTny/Amr_Gaber.png",
   },
   {
     UserName: "amromamdouhperformance",
@@ -583,7 +567,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "499.2K",
     Name: "Amro Mamdouh",
-    Photo: null,
+    Photo: "https://i.postimg.cc/fy3PntCS/Amro_Mamdouh.png",
   },
   {
     UserName: "arwaellaithy",
@@ -592,7 +576,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "30.8K",
     Name: "Arwa Elaithi",
-    Photo: null,
+    Photo: "https://i.postimg.cc/sf88PmfY/Arwa_Elaithi.png",
   },
   {
     UserName: "amrbadawy_",
@@ -601,7 +585,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: null,
     Name: "Amr Badawy ",
-    Photo: null,
+    Photo: "https://i.postimg.cc/Kv66bNdG/Amr_Badawy.png",
   },
   {
     UserName: "ayaessam117",
@@ -610,7 +594,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "1.3M",
     Name: "Aya Essam",
-    Photo: null,
+    Photo: "https://i.postimg.cc/x1G42Sv5/Aya_Essam.png",
   },
   {
     UserName: "Asma Oraby",
@@ -619,7 +603,7 @@ const influencers = ref([
     Youtube: "4.4K",
     tiktok: "5.3k",
     Name: "Asma Oraby",
-    Photo: null,
+    Photo: "https://i.postimg.cc/ZKdQwN01/Asma_Oraby.png",
   },
   {
     UserName: "ayasokkar",
@@ -628,7 +612,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "353.7K",
     Name: "Aya Sokkar",
-    Photo: null,
+    Photo: "https://i.postimg.cc/hGS343MB/Aya_Sokkar.png",
   },
   {
     UserName: "basemelabd",
@@ -637,7 +621,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "527.4K",
     Name: "Basem Elabd",
-    Photo: null,
+    Photo: "https://i.postimg.cc/8PLSj9dJ/Basem_Elabd.png",
   },
   {
     UserName: "basemofficial_",
@@ -646,7 +630,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "2.3k",
     Name: "Basem Abd Alhafez",
-    Photo: null,
+    Photo: "https://i.postimg.cc/NG3tGBXv/Basem_Abd_Alhafez.png",
   },
   {
     UserName: "bakr.magdy.official",
@@ -655,7 +639,7 @@ const influencers = ref([
     Youtube: "2.19k",
     tiktok: "2.7k",
     Name: "Bakr magdy",
-    Photo: null,
+    Photo: "https://i.postimg.cc/XNG30ppg/Bakr_magdy.png",
   },
   {
     UserName: "ayatsaqrrrr",
@@ -664,7 +648,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "8.5k",
     Name: "Ayat Saqr",
-    Photo: null,
+    Photo: "https://i.postimg.cc/RFhsK6jp/Ayat_Saqr.png",
   },
   {
     UserName: "ayatollah_hassan1",
@@ -673,7 +657,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "9.5k",
     Name: "Ayatollah Hassan",
-    Photo: null,
+    Photo: "https://i.postimg.cc/DzBpSdYb/Ayatollah_Hassan.png",
   },
   {
     UserName: "bassmaayad_",
@@ -682,7 +666,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "75K",
     Name: "Bassma Ayad",
-    Photo: null,
+    Photo: "https://i.postimg.cc/13H1KFjy/Bassma_Ayad.png",
   },
   {
     UserName: "ben_tarekk",
@@ -691,7 +675,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "35K",
     Name: "Youssef Tarek",
-    Photo: null,
+    Photo: "https://i.postimg.cc/rF1B8Wc5/Youssef_Tarek.png",
   },
   {
     UserName: "amira_shalby252",
@@ -700,7 +684,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "121.7K",
     Name: "Amira Shalby",
-    Photo: null,
+    Photo: "https://i.postimg.cc/V6syTk2X/Amira-Shalby.png",
   },
   {
     UserName: "azouzadel",
@@ -709,7 +693,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "45.4K",
     Name: "Azouz Adel",
-    Photo: null,
+    Photo: "https://i.postimg.cc/B6zhgZ3S/Azouz_Adel.png",
   },
   {
     UserName: "bassantmamdouh__",
@@ -718,7 +702,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "114K",
     Name: "Bassant Mamdouh",
-    Photo: null,
+    Photo: "https://i.postimg.cc/g2dPRs4M/Bassant_Mamdouh.png",
   },
   {
     UserName: "alhusseinamr_7",
@@ -727,7 +711,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "10k",
     Name: "Alhussein Amr",
-    Photo: null,
+    Photo: "https://i.postimg.cc/ZnRS95cJ/Alhussein-Amr.png",
   },
   {
     UserName: "boshy_official",
@@ -736,7 +720,7 @@ const influencers = ref([
     Youtube: "97.2k",
     tiktok: null,
     Name: "Ahmed khaled",
-    Photo: null,
+    Photo: "https://i.postimg.cc/vZ1Zq35G/Ahmed-khaled.png",
   },
   {
     UserName: "babyjessy",
@@ -745,7 +729,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "100.3K",
     Name: "Jasmin",
-    Photo: null,
+    Photo: "https://i.postimg.cc/5tKchVJG/Jasmin.png",
   },
   {
     UserName: "baherra_",
@@ -754,7 +738,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "1.7M",
     Name: "Bahera montasir",
-    Photo: null,
+    Photo: "https://i.postimg.cc/bdc376d4/Bahera_montasir.png",
   },
   {
     UserName: "ahmedkabokabo",
@@ -763,7 +747,7 @@ const influencers = ref([
     Youtube: null,
     tiktok: "3M",
     Name: "Ahmed Ashraf",
-    Photo: null,
+    Photo: "https://i.postimg.cc/X7jZ8f2v/Ahmed-Ashraf.png",
   },
   {
     UserName: "bahaaelkhateebofficial",
@@ -772,26 +756,8 @@ const influencers = ref([
     Youtube: null,
     tiktok: "1.5k",
     Name: "Bahaa Eldin Elkhateeb",
-    Photo: null,
-  },
-  {
-    UserName: "asmaa_essam_makeup_artist",
-    Insagram: "170K",
-    facebook: null,
-    Youtube: null,
-    tiktok: "1.1k",
-    Name: "Asmaa Essam",
-    Photo: null,
-  },
-  {
-    UserName: "asmaali_official",
-    Insagram: "111K",
-    facebook: null,
-    Youtube: null,
-    tiktok: "154.6K",
-    Name: "Asmaa Ali",
-    Photo: null,
-  },
+    Photo: "https://i.postimg.cc/QCWfnLNp/Bahaa_Eldin_Elkhateeb.png",
+  }
 ]);
 </script>
 
